@@ -100,3 +100,4 @@ function caseInsensitivePalindrome(str) {
     return caselessStr === reversedCaselessStr;
 }
 
+
