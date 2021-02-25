@@ -16,3 +16,28 @@ Arrays
 search function 
 const arr = [10, 20, 30]
 if (arr.includes[10]) will return true
+
+
+// Promises
+
+const buyFlightTicket = () => {
+    return new Promise( (resolve, reject) => {
+        setTimeout( () => {
+            const error = true;
+            
+            if( error ) {
+                reject("Sorry your payment was not successful")
+            } else {
+                resolve("Thank you, your payment was successful");
+            }
+        }, 3000)
+    })
+}
+
+buyFlightTicket()
+.then( (success) => console.log(success))
+.catch( (error) => console.log(error) );
+
+Fetch
+ * RESTFul API - https://jsonplaceholder.typicode.com/
+ * Docs - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
